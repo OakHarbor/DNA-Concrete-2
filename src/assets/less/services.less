@@ -1,0 +1,190 @@
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-1202 {
+        padding: var(--sectionPadding);
+        background-color: var(--bodyTextColorWhite);
+
+        .cs-container {
+            max-width: (1280/16rem);
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-flex-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            justify-content: center;
+            gap: (16/16rem);
+        }
+
+        .cs-item {
+            /* .cs-h3 and .cs-item-text both use text-align: inherit, so change the below to affect the whole item */
+            text-align: left;
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            /* 20px - 48px */
+            padding: clamp(1.25rem, 2.2vw + 1rem, 3rem);
+            padding-bottom: 0;
+            background-color: transparent;
+            border: 1px solid #BEB9B5;
+            display: flex;
+            flex-direction: column;
+
+            &:nth-of-type(4) {
+                .cs-h3 {
+                    max-width: 14ch;
+                }
+            }
+
+            .cs-item-text {
+                margin-bottom: auto;
+            }
+
+            .cs-button-solid {
+                margin-top: 1.5rem;
+                width: 100%;
+                position: relative;
+                top: (8/16rem);
+            }
+        }
+
+        .cs-picture {
+            margin-bottom: (20/16rem);
+            border-radius: 50%;
+            position: relative;
+            /* prevents flexbox from squishing it */
+            flex: none;
+        }
+
+        .cs-text-group {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cs-icon {
+            width: (60/16rem);
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .cs-title {
+            color: var(--headerColor);
+        }
+
+        .cs-h3 {
+            font-size: (25/16rem);
+            max-width: 15ch;
+            line-height: 1.2em;
+            text-align: inherit;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: (12/16rem);
+            color: var(--headerColor);
+            transition: color 0.3s;
+        }
+
+        .cs-item-text {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            text-align: inherit;
+            margin: 0;
+            color: var(--bodyTextColor);
+            transition: color 0.3s;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-1202 {
+        .cs-content {
+            text-align: left;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        .cs-title {
+            margin: 0;
+        }
+
+        .cs-card-group {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .cs-item {
+            margin: 0;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-1202 {
+        .cs-content,
+        .cs-card-group {
+            max-width: (1280/16rem);
+        }
+
+        .cs-title {
+            max-width: (856/16rem);
+        }
+
+        .cs-card-group {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .cs-item {
+            max-width: none;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-1202 {
+            background-color: rgba(0, 0, 0, 0.2);
+
+            .cs-h3,
+            .cs-item-text,
+            .cs-title {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-item-text {
+                opacity: 0.8;
+            }
+        }
+    }
+}

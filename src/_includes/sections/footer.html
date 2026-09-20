@@ -1,80 +1,128 @@
-<!-- ============================================ -->
-<!--                   Footer                     -->
-<!-- ============================================ -->
-
-<footer id="cs-footer-275">
-    <div class="cs-container">
-        <!-- Logo Group -->
-        <div class="cs-logo-group">
-            <a aria-label="go back to home" class="cs-logo" href="/">
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo-light.svg" alt="logo" width="240" height="32">
-            </a>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur pellentesque dignissim sed amet.
-            </p>
-            <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.socials.instagram }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
-                </a>
+<footer id="cs-footer-1294">
+    <div class="cs-container">       
+        <!-- Subscribe Form -->
+        <div id="cta-1294">
+            <div class="cs-content">
+                <h2 class="cs-title">We Might Be Closer Than You Think</h2>
+                <a href="" class="cs-button-solid">Check Our Locations</a>
             </div>
-        </div>
-        <!-- Links -->
-        <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <span class="cs-header">Sitemap</span>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/">Home</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/about/">About</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/reviews/">Reviews</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/blog/">Blog</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/contact/">Contact</a>
-            </li>
-        </ul>
-        <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <span class="cs-header">Projects</span>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/project-one/">Project One</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/project-two/">Project Two</a>
-            </li>
-        </ul>
-        <!-- Contact Info -->
-        <ul class="cs-contact">
-            <li class="cs-nav-li">
-                <span class="cs-header">Contact</span>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
-                    {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cta.jpg" | resize({ width: 576, height: 634 }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cta.jpg" | resize({ width: 1984, height: 530 }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cta.jpg" | resize({ width: 2500, height: 523 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/cta.jpg" | resize({ width: 2500, height: 523 }) | jpeg %}" alt="" aria-hidden="true" width="1280" height="268" loading="lazy" decoding="async">
+            </picture>
+        </div>                
+        <div class="cs-wrapper">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="/">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo" width="240" height="32">
                 </a>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
-            </li>
-        </ul>
+                <p class="cs-text">
+                    DNA Restoring Concrete Inc, founded in 2019, brings expert concrete floor restoration to California's Central Valley—family-owned and ASCC-certified.
+                </p>
+                <a href="tel:{{client.phoneForTell}}" class="cs-link">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/call.svg" alt="icon" width="24" height="24">
+                    Call us: {{client.phoneFormatted}}
+                </a>
+                <a href="tel:{{client.address.mapLink}}" class="cs-link">
+                    <img class="cs-link-icon cs-clock" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/clock.svg" alt="icon" width="24" height="24">
+                    Opening hours: Mon - Sat: 8:00am To 9:00pm
+                </a>
+                <a href="tel:{{client.address.mapLink}}" class="cs-link">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/pin.svg" alt="icon" width="24" height="24">
+                        {{ client.address.lineOne }},
+                        {{ client.address.lineTwo }}, 
+                        {{ client.address.city }}, {{ client.address.state }}
+                        {{ client.address.zip }}
+                </a>
+
+                {#
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}" target="_blank" rel="noopener">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.socials.instagram }}" target="_blank" rel="noopener">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div> 
+                #}
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">industries</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/agricultural-processing-facilities/">Agricultural Processing Facilities</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/food-and-beverage-facilities/">Food & Beverage Processing</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/industrial-and-manufacturing/">Industrial & Manufacturing</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/commercial/">commercial concrete coatings</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Quick Links</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/about/">About</a>
+                </li>
+                 <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/services/">Services</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/portfolio/">portfolio</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/blog/">blog</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Locations</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/stockton/">stockton</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/modesto/">modesto</a>
+                </li>
+                  <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/tracy/">Tracy</a>
+                </li>
+                  <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/manteca/">manteca</a>
+                </li>
+                  <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/lodi/">lodi</a>
+                </li>
+                  <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/elk-grove/">elk grove</a>
+                </li>
+                  <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/sacramento/">sacramento</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">Copyright © {% year %}. Designed & Hand Coded By
+            <a class="cs-copyright-link" href="https://oakharborwebdesigns.com/">Oak harbor Web Designs</a>
+        </span>
+      {#  <a href="" class="cs-copyright-link">Terms of Service</a>
+        <a href="" class="cs-copyright-link">Privacy Policy</a> #}
     </div>
 </footer>

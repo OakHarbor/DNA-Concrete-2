@@ -2,37 +2,35 @@
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" />
 
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
     <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
-    <!-- {% include "components/post-schema.html" %} -->
+    {% include "components/post-schema.html" %} 
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+    <div id="banner-1106">
+        <div class="cs-container">
+            <span class="cs-int-title">{{ title }}</span>
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/blog/" class="cs-link">Blog</a>
+                    <a href="/blog/{{ url }}/" class="cs-link cs-active">{{ title }}</a>
+                </div>
+            </div>
 
-    <div id="banner-310">
-        <div class="cs-container"></div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" decoding="async">
-        </picture>
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 948 }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | jpeg %}" alt="" width="1920" height="474" fetchpriority="high" decoding="async">
+            </picture>
+        </div>
     </div>
-
     <!-- ============================================ -->
     <!--                Post Content                  -->
     <!-- ============================================ -->
@@ -74,4 +72,7 @@
 
         {% include 'components/featured-posts.html' %}
     </div>
+                               
+    {% include 'sections/cta.html' %}
+                                
 {% endblock %}

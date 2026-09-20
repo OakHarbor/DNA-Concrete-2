@@ -1,108 +1,225 @@
 ---
-title: "About | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "About | DNA Restoring Concrete"
+description: "Founded in 2019 by concrete specialist Andrew Billings, DNA Restoring Concrete emerged from a perfect blend of technical mastery and personal determination. Drawing on over 15 years of hands-on concrete refinishing experience, Andrew established the company while balancing single fatherhood, driven by his vision to revolutionize how businesses and homeowners experience concrete surfaces."
 permalink: "/about/"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" />
     <link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
-
-    <div id="banner-310">
+<div id="banner-1106">
         <div class="cs-container">
             <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/about/" class="cs-link cs-active">About</a>
+                </div>
             </div>
+
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 948 }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | jpeg %}" alt="" width="1920" height="474" fetchpriority="high" decoding="async">
+            </picture>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
     </div>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                Side By Side                  -->
     <!-- ============================================ -->
 
-    <section id="RPsbs-313">
+    <section id="sbs-1640">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
             <div class="cs-content">
                 <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About CodeStitch</h2>
+                <h1 class="cs-title">Our Legacy of Concrete Transformation
+                </h1>
+                <picture class="cs-picture">
+                    <!-- Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery2.jpg" | resize({ width: 576, height: 840 }) | webp %}" type="image/webp">
+                    <!-- Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery2.jpg" | resize({ width: 928, height: 1504' }) | webp %}" type="image/webp">
+                    <!-- Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery2.jpg" | resize({ width: 1260, height: 1364 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/gallery2.jpg" | resize({ width: 1260, height: 1364 }) | jpeg %}" alt="about DNA restoring concrete" width="682" height="406" loading='lazy' decoding='async' aria-hidden='true'>
+                </picture>
+            </div>
+            <div class="cs-stats-group">
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Founded in 2019 by concrete specialist Andrew Billings, DNA Restoring Concrete emerged from a perfect blend of technical mastery and personal determination. Drawing on over 15 years of hands-on concrete refinishing experience, Andrew established the company while balancing single fatherhood, driven by his vision to revolutionize how businesses and homeowners experience concrete surfaces. His expertise transforms utilitarian concrete into sophisticated, high-performance spaces that enhance property aesthetics and functionality.
                 </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
+                <p class="cs-text">
+                    DNA Restoring Concrete reached a pivotal growth milestone in 2023 with the addition of Justin Lewis, whose distinguished hospitality background brought a new dimension to our client relationships. Justin's customer-focused approach ensures that each project delivers both technical excellence and an exceptional client journey. As certified members of the American Society of Concrete Contractors, we deliver premium polished concrete, epoxy solutions, and specialized finishes throughout Stockton and Central Valley—creating durable, visually striking surfaces for commercial facilities, corporate environments, and residential properties alike.
+                </p>
+                <ul class="cs-stats">
+                    <li class="cs-stat">
+                        <span class="cs-number">98%</span>
+                        <span class="cs-desc">Customer Satisfaction</span>
+                    </li>
+                    <li class="cs-stat">
+                        <span class="cs-number">100%</span>
+                        <span class="cs-desc">Project Success Rate</span>
+                    </li>
+                    <li class="cs-stat">
+                        <span class="cs-number">90%</span>
+                        <span class="cs-desc">Repeat Business</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!-- Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/background.png" | resize({ width: 640, height: 480 }) | webp %}" type="image/webp">
+            <!-- Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/background.png" | resize({ width: 1024, height: 768 }) | webp %}" type="image/webp">
+            <!-- Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/background.png" | resize({ width: 1920, height: 1080 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/background.png" | resize({ width: 1920, height: 1080 }) | jpeg %}" alt="background image" width="1920" height="1080" loading='lazy' decoding='async' aria-hidden='true'>
+        </picture>
+    </section>
+
+    <section id="stats-1230">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Why Pick DNA</span>
+                    <h2 class="cs-title">Contractors who actually communicate</h2>
+                    <p class="cs-text">
+                        We're a small, hands-on team dedicated to your complete satisfaction — with the communication and craftsmanship that set us apart from the competition.
+                    </p>
                 </div>
-                <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+                <ul class="cs-card-group">  
+                    <li class="cs-item">
+                        <h3 class="cs-topper">Industries Served</h3>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-h3">Agricultural Processing Facilities</span>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-h3">Food & Beverage Processing</span>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-h3">Industrial & Manufacturing</span>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-h3">Commercial Concrete Coatings</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="cs-stat-group">
+                <li class="cs-stat">
+                    <span class="cs-number">01</span>
+                    <h3 class="cs-desc">Trusted Expertise</h3>
+                    <p class="cs-text">15+ years in concrete delivers flawless floors you can rely on for decades, backed by our ASCC membership.</p>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-number">02</span>
+                    <h3 class="cs-desc">Top-Tier Communication</h3>
+                    <p class="cs-text">Hospitality-rooted service means clear updates, with 98% of clients praising our responsive, honest approach.</p>
+                </li>
+                 <li class="cs-stat">
+                    <span class="cs-number">03</span>
+                    <h3 class="cs-desc">Excellent Track Record</h3>
+                    <p class="cs-text">Every project finishes on time and on budget — a 100% success rate keeps your space ready fast.</p>
+                </li>
+                 <li class="cs-stat">
+                    <span class="cs-number">04</span>
+                    <h3 class="cs-desc">Family-Owned Commitment</h3>
+                    <p class="cs-text">We create jobs and opportunities locally, earning 90% repeat business from happy Central Valley clients.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+   
+    <section id="reviews-2327">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">What Central Valley clients say</h2>
+            </div>
+            <div class="cs-reviews-wrapper">
+                <div class="cs-wrapper cs-active">
+                    <p class="cs-review">
+                        DNA’s polished concrete transformed my Stockton office into a sleek, professional space. Their team was honest and on time—couldn’t ask for better!
+                    </p>
+                    <div class="cs-flex-group">
+                        <div class="cs-info">
+                            <span class="cs-name">Robert K</span>
+                            <span class="cs-job">Google Review</span>
+                        </div>
+                    </div>
+                </div>
+                  <div class="cs-wrapper cs-hidden">
+                    <p class="cs-review">
+                        They refinished my warehouse floor fast and flawlessly. Tenants love it, and communication was a breeze. DNA’s the real deal!
+                    </p>
+                    <div class="cs-flex-group">
+                        <div class="cs-info">
+                            <span class="cs-name">Diane L</span>
+                            <span class="cs-job">Google Review</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-wrapper cs-hidden">
+                    <p class="cs-review">
+                        The epoxy coating on my garage floor is tough and looks incredible. Justin kept me updated every step—top-notch service!
+                    </p>
+                    <div class="cs-flex-group">
+                        <div class="cs-info">
+                            <span class="cs-name">Maria T</span>
+                            <span class="cs-job">Google Review</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-wrapper cs-hidden">
+                    <p class="cs-review">
+                        My stained patio is now a showstopper, thanks to DNA. Andrew’s care and attention to detail made all the difference!
+                    </p>
+                    <div class="cs-flex-group">
+                        <div class="cs-info">
+                            <span class="cs-name">James P</span>
+                            <span class="cs-job">Google Review</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-flex">
+                    <button class="cs-button" aria-label="previous review">
+                        <img class="cs-button-arrow cs-prev" src="/assets/svgs/review-right-arrow.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true" />
+                    </button>
+                    <button class="cs-button" aria-label="next review">
+                        <img class="cs-button-arrow" src="/assets/svgs/review-right-arrow.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="cs-container">
+            <div class="cs-content">
+                <h3 class="cs-text">Proud Member — The American Society of Concrete Contractors (ASCC) · License #1048419</h3>
+            </div>
+            <div class="cs-logos">
+                <img class="cs-logo" src="/assets/images/partners/logo1.webp" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+                <img class="cs-logo" src="/assets/images/partners/logo2.webp" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+                <img class="cs-logo" src="/assets/images/partners/logo3.webp" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+                <img class="cs-logo" src="/assets/images/partners/logo4.webp" alt="logo" width="150" height="61" loading="lazy" decoding="async">
+                <img class="cs-logo" src="/assets/images/partners/logo5.webp" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+                <img class="cs-logo" src="/assets/images/partners/logo6.webp" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+                <img class="cs-logo" src="/assets/images/partners/logo7.webp" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+                <img class="cs-logo" src="/assets/images/partners/logo8.webp" alt="logo" width="200" height="61" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
 
     {% include 'sections/cta.html' %}
 
+    <script defer src="/assets/js/review.js"></script>
 {% endblock %}

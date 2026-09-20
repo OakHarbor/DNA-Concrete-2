@@ -1,0 +1,155 @@
+---
+title: "Clovis Concrete Coatings Near You | Epoxy Contractors"
+description: "DNA Restoring Concrete is the leading concrete coating company in Clovis and the surrounding areas. Commercial and residential - call us."
+preloadImg: ''
+permalink: 'work-with-us/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    parent: Delete, or put another page's key here to create a dropdown
+    order: 1000
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" />
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/gall2.jpg' | resize({ width: 640, height: 480, position: 'bottom'}) | webp %}" />
+    <link rel="stylesheet" href="/assets/css/content.css"><!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+
+<div id="banner-1106">
+        <div class="cs-container">
+            <span class="cs-int-title">What to Expect</span>
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/work-with-us/" class="cs-link cs-active">What to Expect</a>
+                </div>
+            </div>
+
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 948 }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | jpeg %}" alt="" width="1920" height="474" fetchpriority="high" decoding="async">
+            </picture>
+        </div>
+    </div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/gall2.jpg' | resize({ width: 332, height: 400 }) | webp %}"
+                        type="image/webp" />
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/gall2.jpg' | resize({ width: 664, height: 800 }) | webp %}"
+                        type="image/webp" />
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/gall2.jpg' | resize({ width: 1036, height: 1246 }) | webp %}"
+                        type="image/webp" />
+                    <img src="{% getUrl '/assets/images/gall2.jpg' | resize({ width: 1036, height: 1246 }) | jpeg %}"
+                        alt="Clovis Concrete Coatings Near Me" width="518" height="623" loading="lazy" decoding="async"
+                        aria-hidden="true" />
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">What to Expect</h2>
+            <p>At DNA Restoring Concrete, we want to ensure that your project runs smoothly and is completed to your
+                satisfaction. Here's what you can expect from us at every step of the process.</p>
+            <h3>Obtaining a Quote</h3>
+            <p>Before DNA provides you with a detailed quote, we first qualify all residential customers and some
+                commercial customers. Here's how it works:</p>
+            <ul>
+                <li>
+                    <p>A DNA representative (the coordinator) will reach out via email, text, or phone to collect the
+                        basic details of your project, including:</p>
+                </li>
+                <li>
+                    <p>A general description of the project</p>
+                </li>
+                <li>
+                    <p>Project address and contact information</p>
+                </li>
+                <li>
+                    <p>Pictures of the current conditions</p>
+                </li>
+                <li>
+                    <p>Within 1 business day, we'll provide you with a preliminary estimate based on the information
+                        provided.</p>
+                </li>
+                <li>
+                    <p>If the estimate fits within your budget, we'll proceed by scheduling a job walk with one of our
+                        Scouts.</p>
+                </li>
+                <li>
+                    <p>We typically allow 2 business days for our representative to schedule a convenient time for the
+                        job walk.</p>
+                </li>
+            </ul>
+            <h3>What Happens at a Job Walk</h3>
+            <p>Once your project is qualified, one of our Scouts will reach out within 2 business days to schedule a job
+                walk at your location. During this visit:</p>
+            <ul>
+                <li>
+                    <p>Our Scout will confirm project dimensions, inspect existing conditions, and gather additional
+                        details for the Estimator and Technicians.</p>
+                </li>
+                <li>
+                    <p>This is the perfect time for you to ask questions about the installation process, finish options,
+                        or any other concerns.</p>
+                </li>
+                <li>
+                    <p>Keep in mind that the Scout is not responsible for the final estimate. After the job walk, the
+                        Scout will report their findings to the Estimator, who will then provide you with a formal
+                        quote.</p>
+                </li>
+            </ul>
+            <h3>Payment</h3>
+            <p>To secure your place in our project queue, we require a 25% deposit at the time of booking. The remaining
+                balance will be due upon completion of the project. Here's what to expect with payment:</p>
+            <ul>
+                <li>
+                    <p>Deposit and Final Payment: You'll receive an invoice for both the deposit and final payment.</p>
+                </li>
+                <li>
+                    <p>Accepted Payment Methods: Payments can be made via bank transfer or debit accounts. Credit cards
+                        are not accepted.</p>
+                </li>
+                <li>
+                    <p>20-Day Preliminary Notice: We may issue a 20-day preliminary notice to the property owner, which
+                        is a legal document securing DNA's right to collect payment for any unpaid work.</p>
+                </li>
+            </ul>
+            <h3>Scheduling</h3>
+            <p>Once your deposit is received, we will give you a preliminary installation date. This date serves as an
+                estimate, and we'll keep you informed of any scheduling changes. Here's what you can expect:</p>
+            <ul>
+                <li>
+                    <p>After the deposit, DNA will confirm your project in our work queue.</p>
+                </li>
+                <li>
+                    <p>You will be kept up-to-date with any changes or adjustments to your scheduled installation date.
+                    </p>
+                </li>
+            </ul>
+            <p>We're here to ensure that every step of the process goes smoothly and to keep you informed. If you ever
+                have any questions or concerns along the way, don't hesitate to reach out!</p>
+                <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+        </div>
+</section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

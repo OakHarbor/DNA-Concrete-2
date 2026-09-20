@@ -1,0 +1,191 @@
+---
+title: "Antioch, CA Concrete Coatings Near You | Epoxy Contractors"
+description: "DNA Restoring Concrete is the leading concrete coating company in Antioch and the surrounding areas. Commercial and residential - call us."
+preloadImg: ''
+permalink: 'antioch/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    parent: Delete, or put another page's key here to create a dropdown
+    order: 1000
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" />
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/portfolio3.jpg' | resize({ width: 640, height: 480, position: 'bottom'}) | webp %}" />
+    <link rel="stylesheet" href="/assets/css/content.css"><!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What Are The Benefits Of Epoxy Coatings For Concrete Floors?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Epoxy coatings add durability, improve traction, and resist stains, chemicals, and moisture. In commercial settings, this means less downtime for repairs and easier cleanup. At home, epoxy garage and patio coatings protect surfaces from wear and give the space a cleaner, finished look."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do You Offer Concrete Polishing Services In Antioch?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Concrete polishing creates a smooth, high-gloss surface without adding a coating. It’s a great option for commercial interiors and showrooms where a refined, low-maintenance finish is preferred. We offer both full polishing and hybrid systems that combine grinding, densification, and sealing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How Does Polyurea Compare To Epoxy?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Polyurea offers faster cure times, higher flexibility, and greater resistance to UV rays compared to epoxy. Epoxy provides a thicker, more customizable finish, especially for decorative flake systems and interior projects. We help clients choose the right system based on location, usage, and environment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can You Stain Concrete For A Decorative Look?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We use acid- and water-based stains to give concrete a natural stone, marbled, or weathered appearance. Once stained, we seal the surface to preserve the look and make cleaning easier. This is a popular option for patios, basements, and retail spaces."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What Kind Of Surface Prep Is Involved Before Coating?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We start by grinding the concrete to remove coatings, dirt, and surface imperfections. Cracks and joint damage are repaired next. Surface prep opens the pores of the slab, allowing the coating to bond tightly and last longer. Skipping this step leads to early failure."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can You Coat A Patio Or Outdoor Space?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We coat patios, walkways, pool decks, and other exterior concrete areas. Polyurea systems work well outdoors thanks to their UV stability, and epoxy can be used with the right topcoat. We also offer textured or decorative finishes to match the style of the home."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How Long Do Your Concrete Coatings Last?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most epoxy and polyurea coatings last 10 to 15 years with proper prep and care. High-traffic commercial settings may need periodic recoating or maintenance, but residential floors often last longer. Routine cleaning and avoiding harsh chemicals will help preserve the finish."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What If My Floor Has Cracks Or Surface Damage?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We repair cracks, pits, and spalls before applying any coating. Surface prep is part of every job, and we use industry-grade repair compounds that bond permanently to the concrete. A smooth, restored surface helps the coating perform better and look more consistent."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are Your Coatings Slip-Resistant?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We incorporate anti-slip additives into our epoxy and polyurea systems. These textures improve safety without making the surface feel rough. This is especially helpful in garages, medical clinics, and outdoor walkways where water or oil may be present."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What Kinds Of Properties Do You Work On In Antioch?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We serve commercial clients with warehouses, showrooms, and medical offices, as well as homeowners with large garages, patios, or basements. We work across Antioch and nearby areas like Oakley and Pittsburg, providing both restoration and protective coatings for concrete."
+                }
+            }
+            ]
+        }
+    </script> 
+{% endblock %}
+
+{% block body %}
+
+<div id="banner-1106">
+        <div class="cs-container">
+            <span class="cs-int-title">Antioch Concrete Coatings</span>
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/antioch/" class="cs-link cs-active">Antioch</a>
+                </div>
+            </div>
+
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 948 }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | jpeg %}" alt="" width="1920" height="474" fetchpriority="high" decoding="async">
+            </picture>
+        </div>
+    </div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio3.jpg' | resize({ width: 332, height: 400 }) | webp %}" type="image/webp" />
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio3.jpg' | resize({ width: 664, height: 800 }) | webp %}" type="image/webp" />
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio3.jpg' | resize({ width: 1036, height: 1246 }) | webp %}" type="image/webp" />
+                    <img src="{% getUrl '/assets/images/portfolio3.jpg' | resize({ width: 1036, height: 1246 }) | jpeg %}" alt="Merced Concrete Coatings Near Me" width="518" height="623" loading="lazy" decoding="async" aria-hidden="true" />
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Concrete Coatings in Antioch, CA | Pro Epoxy Application</h1>
+            <h2>Epoxy Coatings For Commercial Spaces and Homes</h2>
+            <a href="/contact/" class="cs-button-solid">Get A Quote</a>
+            <p>DNA Restoring Concrete delivers high-quality epoxy coatings and concrete restoration services to businesses and homeowners in Antioch, CA. A professionally installed Epoxy coating will provide a durable, low-maintenance surface that protects concrete from stains, moisture, and heavy traffic. Whether you have a warehouse floor built for industrial use, a showroom that needs to make your vehicle inventory look world-class, or a residential garage that will boost your home value, our team has the experience to get the job done perfectly.</p>
+            <p>We have more than a decade of experience, and we offer a range of concrete restoration services, including polishing, staining, sealing, and joint expansion repairs. Our goal is to provide solutions that work long-term, keeping floors in top condition for years to come.</p>
+            <h2>We Keep Employees, Customers, and Residents Safe &amp; Happy</h2>
+            <p>A well-maintained floor does more than look good---it improves safety and makes daily life easier. Epoxy coatings create slip-resistant surfaces, prevent cracks and deterioration, and simplify maintenance. Whether it's a commercial space with high foot traffic or a residential garage that needs protection from spills and stains, a professionally coated floor offers practical benefits that go beyond appearance.</p>
+            <h3>Commercial Epoxy Coatings for Safety and Function</h3>
+            <p>Industrial and commercial spaces in Antioch require flooring that holds up under constant use. Warehouses, medical facilities, automotive shops, and distribution centers need floors that resist chemicals, heavy loads, and wear. A smooth, sealed epoxy coating prevents dust accumulation, makes cleanup simple, and helps prevent cracks that could cause safety hazards. Businesses near the Merced Airport Industrial Park and along G Street rely on tough, non-slip flooring to keep employees safe and operations running smoothly.</p>
+            <h3>Stunning Showrooms, Retail Spaces, and More</h3>
+            <p>Retail stores, showrooms, and office buildings need flooring that balances durability with showstopping design. Epoxy floors provide a polished, modern look that withstands foot traffic, spills, and daily cleaning. Auto dealerships and retail spaces in downtown Antioch benefit from floors that reflect light well, making showrooms feel bright and inviting. Our epoxy coatings can be customized with decorative flakes or metallic finishes to add unique character while keeping the surface strong and easy to maintain.</p>
+            <h3>Pro Garage Floor Coatings, Patios, and Other Spaces</h3>
+            <p>While DNA Restoring Concrete specializes in commercial projects, we also take on large residential jobs. Homeowners in neighborhoods like Bellevue Ranch and Fahrens Park trust us to coat garage floors, patios, and basements with durable epoxy finishes. A garage floor coating resists oil stains, tire marks, and moisture damage, making the space easier to clean and more functional. Patios benefit from coatings that protect against weather-related cracking while adding a finished appearance to outdoor spaces.</p>
+            <h2>What a Professional Epoxy Installation is Like</h2>
+            <p>Epoxy flooring requires careful preparation and application for a long-lasting result. We begin by assessing the existing concrete, repairing cracks, and making sure the surface is clean and ready for coating. The epoxy is applied in layers, bonding directly to the concrete to create a seamless, protective finish. Depending on the project, we can add slip-resistant textures, decorative flakes, or custom colors to match the space's needs. Once the coating cures, the floor is ready to handle years of heavy use with minimal maintenance.</p>
+            <h2>FAQs About Concrete Coatings in Antioch, CA</h2>
+            <h3>What Are Epoxy Coatings Best Used For?</h3>
+            <p>Epoxy coatings work best in spaces that see frequent traffic, heavy loads, or exposure to chemicals and liquids. In Antioch, we often install epoxy floors in warehouses, showrooms, automotive service centers, and residential garages. Epoxy creates a sealed surface that prevents concrete from breaking down under pressure, moisture, and abrasion.</p>
+            <h3>Do You Apply Concrete Coatings To Outdoor Surfaces?</h3>
+            <p>Yes. While epoxy is best suited for indoor use, we install polyurea and polyaspartic coatings that handle outdoor exposure. Patios, walkways, and pool decks in Antioch neighborhoods like Mira Vista Hills benefit from coatings that hold up under heat, rain, and UV rays. These finishes add slip resistance and protect the concrete from weather-related cracking.</p>
+            <h3>How Long Does Epoxy Flooring Take To Install?</h3>
+            <p>Most jobs take one to three days from prep to final cure, depending on the square footage and complexity. Industrial coatings with safety striping or multi-layer flake systems may take slightly longer. We'll give you a project timeline during the quote so you know what to expect.</p>
+            <h3>Can You Coat My Pool Deck Or Decorative Patio?</h3>
+            <p>Yes. We apply slip-resistant coatings to pool decks, especially where the concrete has worn smooth over time. If you're looking for a decorative patio, we offer stained and sealed finishes that bring out natural tones or add color variation. These finishes are sealed for weather resistance and long-term durability.</p>
+            <h3>What Kind Of Maintenance Do Coated Floors Need?</h3>
+            <p>Concrete coatings are low maintenance. You can clean them with a soft mop, light detergent, or a floor scrubber in commercial settings. For outdoor coatings, a pressure washer on a low setting usually works. You don't need to wax or polish them.</p>
+            <h3>What Is Joint Expansion Repair And Why Might I Need It?</h3>
+            <p>Concrete expands and contracts as temperatures shift. Expansion joints help control that movement. Over time, the filler breaks down. We clean out old filler and replace it with a semi-rigid joint material that protects the slab and prevents cracking. This is especially important in large warehouses and garages.</p>
+            <h3>How Long Do Your Coatings Last?</h3>
+            <p>With proper surface prep and regular cleaning, epoxy and polyurea coatings typically last 10 to 15 years. Some high-traffic areas may need touch-ups sooner, but most coatings hold up for a decade or more. We'll walk you through the expected lifespan for your specific application.</p>
+            <h3>Is Polished Concrete An Option Instead Of Coating?</h3>
+            <p>Yes. If you want a smooth, reflective surface without applying a coating, polished concrete is a great option. We mechanically grind and seal the surface for a long-lasting finish that looks modern and clean. It's a popular choice for Antioch office buildings and showrooms.</p>
+            <h3>Can You Add Custom Colors Or Decorative Flakes?</h3>
+            <p>Absolutely. We offer a range of color blends, flakes, quartz, and metallic finishes. Whether you want a clean, modern look or something that resembles stone or terrazzo, we can customize the finish to fit your design goals.</p>
+            <h3>Do You Work On Residential And Commercial Jobs In Antioch?</h3>
+            <p>Yes. We serve both residential and commercial clients throughout Antioch, Pittsburg, Oakley, and nearby areas. Whether it's a garage in Black Diamond Estates or a showroom along Lone Tree Way, we can help you upgrade your concrete.</p>
+            <h2>Get a Quote for Concrete Coatings in Antioch, CA</h2>
+            <p>DNA Restoring Concrete proudly serves Antioch and the surrounding communities, including Oakley, Pittsburg, and more. Whether you need a high-durability industrial floor, a polished showroom finish, or a residential garage upgrade, our team is ready to help. We also provide concrete polishing, staining, sealing, and joint expansion repairs to keep concrete surfaces in top condition. Contact us today to learn more about our services and get a quote for your project.</p>
+
+    </div>
+</section>
+                             
+{% include 'sections/cta.html' %}   
+{% endblock %}

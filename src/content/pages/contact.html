@@ -1,6 +1,6 @@
 ---
-title: "Contact | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "Contact | DNA Restoring Concrete"
+description: "Contact DNA Restoring Concrete team for a free quote and a friendly smile."
 permalink: "/contact/"
 ---
 
@@ -8,113 +8,114 @@ permalink: "/contact/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
+   
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
-
-    <div id="banner-310">
+<div id="banner-1106">
         <div class="cs-container">
             <span class="cs-int-title">Contact Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/contact/" class="cs-link cs-active">Contact Us</a>
-            </div>
-        </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
-    </div>
-
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact-265">
-        <div class="cs-container">
-            <div class="cs-left-section">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/contact/" class="cs-link cs-active">Contact</a>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
-                    <label>
-                        Name
-                        <input required type="text" id="name-265" name="name" placeholder="Name">
-                    </label>
-                    <label>
-                        Email
-                        <input required type="text" id="email-265" name="email" placeholder="Email">
-                    </label>
-                    <label>
-                        Phone
-                        <input required type="text" id="phone-265" name="phone" placeholder="Phone">
-                    </label>
-                    <label>
-                        How Did You Find Us
-                        <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
-                    </label>
-                    <label class="cs-label-message">
-                        Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
-                    </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
-                </form>
             </div>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{ client.address.mapLink }}">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
+
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 948 }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | jpeg %}" alt="" width="1920" height="474" fetchpriority="high" decoding="async">
+            </picture>
+        </div>
+    </div>
+            
+
+<section id="contact-1750">
+    <div class="cs-container">
+        <div class="cs-form-group">
+            <div class="cs-content">
+                <span class="cs-topper">Still need answers or a free quote?</span>
+                <h1 class="cs-title">Contact DNA</h1>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                <p style="display:none;">
+                    <label>Don’t fill this out if you're human: 
+                    <input name="bot-field" />
+                    </label>
+                </p>
+
+                 <label class="cs-label">
+                    First Name *
+                    <input class="cs-input" required type="text" id="first-name-1750" name="name" placeholder="Bob">
+                </label>
+
+                <label class="cs-label">
+                    Last Name *
+                    <input class="cs-input" required type="text" id="last-name-1750" name="name" placeholder="Timmy">
+                </label>
+
+                <label class="cs-label cs-email">
+                    Email *
+                    <input class="cs-input" required type="email" id="email-1750" name="email" placeholder="name@company.com">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone *
+                    <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="+1 (206) 987-6543">
+                </label>
+
+                <label class="cs-label">
+                    How'd You Hear About us? *
+                    <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="Google, etc.">
+                </label>
+
+                <label class="cs-label">
+                    City*
+                    <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="+1 (206) 987-6543">
+                </label>
+
+                <label class="cs-label">
+                    Message *
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1750" placeholder="Hello, I am interested..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </form>
+        </div>
+        <!--Contact Info-->
+        <div class="cs-info-group">
+            <div class="cs-info">
+                <span class="cs-topper">Location</span>
+                <span class="cs-detail">                        
+                    {{ client.address.lineOne }},
+                    {{ client.address.lineTwo }}, 
                     {{ client.address.city }}, {{ client.address.state }}
                     {{ client.address.zip }}
-                </a>
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}" alt="building" width="542" height="578" decoding="async">
-                </picture>
+                </span>
+            </div>
+            <div class="cs-info">
+                <span class="cs-topper">Working Hours</span>
+                <span class="cs-detail">Opening hours: Mon - Sat: 8:00am To 9:00pm</span>
+                <span class="cs-detail">Sunday: Closed</span>
+            </div>
+            <div class="cs-info">
+                <span class="cs-topper">Contact</span>
+                <a href="tel:{{client.phoneForTel}}" class="cs-detail">Call us: {{client.phoneFormatted}}</a>
+                <a href="mailto:{{client.email}}" class="cs-detail">Click To Email</a>
             </div>
         </div>
-    </section>
+
+    <div class="cs-picture-group">
+        <iframe class="cs-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4067.105250792108!2d-121.30266189999998!3d37.96415839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900de2fc1b6091%3A0x905799070aaa1f7!2sDNA%20Restoring%20Concrete%20Inc!5e1!3m2!1sen!2sca!4v1789926310561!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+    {% include 'sections/cta.html' %}
+
 
 {% endblock %}
