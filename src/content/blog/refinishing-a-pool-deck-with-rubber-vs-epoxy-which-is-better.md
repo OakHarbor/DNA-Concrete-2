@@ -2,7 +2,7 @@
 title: Refinishing a Pool Deck With Rubber vs. Epoxy - Which is Better?
 url: refinishing-pool-deck-rubber-vs-epoxy
 description: Should you refinish your pool deck with rubber or epoxy coatings?
-  DNA Concrete Coatings, the experts in Sacramento, explain.
+  DNA Restoring Concrete, the experts in Sacramento, explain.
 author: Justin Lewis
 date: 2025-06-26T13:11:00.000Z
 tags:
