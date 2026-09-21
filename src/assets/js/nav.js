@@ -2,7 +2,7 @@
 	// Configuration
 	const CONFIG = {
 		BREAKPOINTS: {
-			MOBILE: 1023.5,
+			MOBILE: 1139.5,
 		},
 		SELECTORS: {
 			body: "body",
@@ -262,4 +262,14 @@
 	init.inertState();
 	init.eventListeners();
 })();
-                                
+
+// tertiary nav toggle code
+const tertiaryDrop = Array.from(document.querySelectorAll("#cs-navigation .cs-drop3-main"));
+
+for (const item of tertiaryDrop) {
+	item.addEventListener("click", (e) => {
+		if (e.target.closest("a")) return;
+		e.stopPropagation();
+		item.classList.toggle("drop3-active");
+	});
+}

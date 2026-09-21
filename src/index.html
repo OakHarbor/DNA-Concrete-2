@@ -2,7 +2,7 @@
 title: "Concrete Resurfacing, Floor Repair, Sealing, More in Stockton, CA"
 description: "Transform your floors with DNA Restoring Concrete's expert polished concrete, epoxy solutions & sealed floors. Family-owned in Stockton & Central Valley."
 permalink: "/"
-tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+tags: "sitemap"
 ---
 
 {% extends "layouts/base.html" %}
@@ -10,7 +10,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% block head %}
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero.jpg" | resize({ width: 640, height: 1738 }) | webp %}" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero.jpg" | resize({ width: 640, height: 1000 }) | webp %}" />
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}
@@ -44,14 +44,14 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 640, height: 1738 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 640, height: 1000 }) | webp %}" type="image/webp">
             <!--Tablet Image-->
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 2048, height: 1794 }) | webp %}" type="image/webp">
             <!--Large Tablet Image-->
             <source media="(min-width: 1024px) and (max-width: 1600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 2500, height: 1399 }) | webp %}" type="image/webp">
             <!--Desktop Image-->
             <source media="(min-width: 1600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <img src="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="concrete floor" width="1" height="1" fetchpriority="high" decoding="async">
+            <img src="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="concrete floor" width="1" height="1" fetchpriority="high" loading="eager" decoding="async">
         </picture>
     </section>
 
