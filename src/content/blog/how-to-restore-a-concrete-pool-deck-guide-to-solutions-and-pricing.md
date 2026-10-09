@@ -7,8 +7,8 @@ author: Justin Lewis
 date: 2025-06-02T09:47:00.000Z
 tags:
   - post
-image: /assets/images/blog/pexels-pixabay-261124.jpg
-imageAlt: repair a concrete pool deck
+image: /assets/images/gallery/stained-concrete-pool-deck.jpg
+imageAlt: Stained concrete pool deck and patio in a backyard
 ---
 
 If your concrete pool deck looks worn out, feels rough on bare feet, or gets dangerously slick when wet, you’re not alone. Here in the Central Valley, pool decks take a lot of abuse. The sun beats down all summer long, water settles into low spots, and chemicals from the pool slowly wear away the surface. It doesn’t take many years before a once-smooth finish starts to show its age.

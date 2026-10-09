@@ -7,8 +7,8 @@ author: Justin Lewis
 date: 2025-07-09T15:42:00.000Z
 tags:
   - post
-image: /assets/images/blog/pexels-tiger-lily-4481323.jpg
-imageAlt: how to preserve an industrial concrete floor
+image: /assets/images/gallery/polished-warehouse-floor.jpg
+imageAlt: Polished concrete warehouse floor with saw-cut control joints
 ---
 
 Concrete joints carry a lot of responsibility on large industrial floors. They let your slab move the way it’s supposed to. But when those joints wear out or break down, the floor starts working against you. If forklift operators are slowing down to avoid rough transitions or if you’ve heard complaints about trip hazards, there’s a good chance your joints need attention.

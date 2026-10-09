@@ -8,7 +8,7 @@ permalink: '/services/polished-concrete/'
 
 {% block head %}
 
-    <link rel="preload" as="image" href="{% getUrl '/assets/images/services/polished-concrete.jpg' | resize({ width: 640, height: 480, position: 'bottom'}) | webp %}" />
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/services/polished-concrete-showroom.jpg' | resize({ width: 640, height: 480, position: 'bottom'}) | webp %}" />
     <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" />
     <link rel="stylesheet" href="/assets/css/content.css">
 {% endblock %}
@@ -46,10 +46,10 @@ permalink: '/services/polished-concrete/'
         <div class="cs-image-group">
             <div class="cs-flex">
                 <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services/polished-concrete.jpg' | resize({ width: 332, height: 400 }) | webp %}" type="image/webp" />
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/services/polished-concrete.jpg' | resize({ width: 664, height: 800 }) | webp %}" type="image/webp" />
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/services/polished-concrete.jpg' | resize({ width: 1036, height: 1246 }) | webp %}" type="image/webp" />
-                    <img src="{% getUrl '/assets/images/services/polished-concrete.jpg' | resize({ width: 1036, height: 1246 }) | jpeg %}" alt="Concrete Polishing Near Me" width="518" height="623" loading="lazy" decoding="async" aria-hidden="true" />
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services/polished-concrete-showroom.jpg' | resize({ width: 332, height: 400 }) | webp %}" type="image/webp" />
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/services/polished-concrete-showroom.jpg' | resize({ width: 664, height: 800 }) | webp %}" type="image/webp" />
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/services/polished-concrete-showroom.jpg' | resize({ width: 1036, height: 1246 }) | webp %}" type="image/webp" />
+                    <img src="{% getUrl '/assets/images/services/polished-concrete-showroom.jpg' | resize({ width: 1036, height: 1246 }) | jpeg %}" alt="Polished concrete floor in a showroom with a wood plank ceiling" width="518" height="623" loading="lazy" decoding="async" aria-hidden="true" />
                 </picture>
             </div>
         </div>

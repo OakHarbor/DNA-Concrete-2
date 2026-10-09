@@ -7,8 +7,8 @@ author: Justin Lewis
 date: 2025-06-26T13:11:00.000Z
 tags:
   - post
-image: /assets/images/blog/pexels-pavel-danilyuk-9119740.jpg
-imageAlt: refinishing your pool deck with rubber vs. epoxy
+image: /assets/images/gallery/stained-concrete-pool-patio.jpg
+imageAlt: Stained concrete patio around a backyard pool
 ---
 Concrete pool decks take a beating in California. Between UV rays, heavy foot traffic, water exposure, and cleaning chemicals, the surface can wear down faster than most outdoor spaces. Many homeowners and commercial property managers start looking for a solution once the concrete begins cracking or becoming slippery.
 

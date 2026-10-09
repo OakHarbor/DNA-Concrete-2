@@ -10,7 +10,7 @@ tags: "sitemap"
 {% block head %}
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero.jpg" | resize({ width: 640, height: 1000 }) | webp %}" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero-stained-concrete-hall.jpg" | resize({ width: 640, height: 1000 }) | webp %}" />
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}
@@ -44,14 +44,14 @@ tags: "sitemap"
 
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 640, height: 1000 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-stained-concrete-hall.jpg" | resize({ width: 640, height: 1000 }) | webp %}" type="image/webp">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 2048, height: 1794 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-stained-concrete-hall.jpg" | resize({ width: 2048, height: 1794 }) | webp %}" type="image/webp">
             <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 2500, height: 1399 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px) and (max-width: 1600px)" srcset="{% getUrl "/assets/images/hero-stained-concrete-hall.jpg" | resize({ width: 2500, height: 1399 }) | webp %}" type="image/webp">
             <!--Desktop Image-->
-            <source media="(min-width: 1600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <img src="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="concrete floor" width="1" height="1" fetchpriority="high" loading="eager" decoding="async">
+            <source media="(min-width: 1600px)" srcset="{% getUrl "/assets/images/hero-stained-concrete-hall.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/hero-stained-concrete-hall.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="Stained and polished concrete floor with a dark accent band in a large multipurpose room" width="1" height="1" fetchpriority="high" loading="eager" decoding="async">
         </picture>
     </section>
 
@@ -170,141 +170,141 @@ tags: "sitemap"
                     <!-- Ensure that the the cs-slide you want to start on has the 'initial' class applied. The JS will take care of the rest -->
                     <picture class="cs-slide active">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide9.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-warehouse-floor.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide9.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-warehouse-floor.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide9.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide9.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-warehouse-floor.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-warehouse-floor.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Polished concrete warehouse floor with a yellow safety line" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide1.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/amber-stained-concrete-floor.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide1.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/amber-stained-concrete-floor.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide1.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide1.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
-                    </picture>
-
-                    <picture class="cs-slide">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide2.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide2.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide2.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide2.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/amber-stained-concrete-floor.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/amber-stained-concrete-floor.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Amber stained concrete floor in an open commercial space" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide3.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/epoxy-loading-bay-floor.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide3.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/epoxy-loading-bay-floor.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide3.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide3.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/epoxy-loading-bay-floor.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/epoxy-loading-bay-floor.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Gray epoxy floor in a facility bay with roll-up doors" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide4.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/epoxy-flake-commercial-kitchen.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide4.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/epoxy-flake-commercial-kitchen.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide4.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide4.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/epoxy-flake-commercial-kitchen.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/epoxy-flake-commercial-kitchen.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Epoxy flake floor in a commercial kitchen" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide5.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-shop-floor.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide5.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-shop-floor.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide5.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide5.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-shop-floor.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-concrete-shop-floor.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Polished concrete floor in a large shop building" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide6.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polishing-residential-concrete-floor.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide6.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polishing-residential-concrete-floor.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide6.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide6.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polishing-residential-concrete-floor.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polishing-residential-concrete-floor.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Technician polishing a concrete floor in a residential space" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide7.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-logo-inlay.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide7.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-logo-inlay.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide7.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide7.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-logo-inlay.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-concrete-logo-inlay.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Polished concrete floor with a custom logo inlay" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide8.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/stained-concrete-pool-deck.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide8.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/stained-concrete-pool-deck.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide8.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide8.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/stained-concrete-pool-deck.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/stained-concrete-pool-deck.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Stained concrete pool deck and patio in a backyard" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide10.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-retail-shop.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide10.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-retail-shop.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide10.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide10.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-retail-shop.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-concrete-retail-shop.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Polished concrete floor in a retail shop" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide11.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-convenience-store.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide11.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-convenience-store.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide11.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide11.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-convenience-store.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-concrete-convenience-store.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="High-gloss polished concrete floor in a convenience store" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide12.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-glass-doors.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide12.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-glass-doors.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide12.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide12.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-glass-doors.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-concrete-glass-doors.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Polished concrete floor in a building with glass roll-up doors" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide13.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-warehouse-safety-lines.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide13.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-warehouse-safety-lines.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide13.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide13.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-warehouse-safety-lines.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-warehouse-safety-lines.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Polished concrete warehouse floor with yellow safety lanes" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-slide">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slideshow/slide14.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-open-warehouse.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide14.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-open-warehouse.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/slideshow/slide14.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/slideshow/slide14.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="concrete floor" width="1920" height="840" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-open-warehouse.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-concrete-open-warehouse.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Polished concrete floor in an open warehouse" width="1920" height="840" loading="lazy" decoding="async">
+                    </picture>
+
+                    <picture class="cs-slide">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services/concrete-overlay-brick-hall.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/services/concrete-overlay-brick-hall.jpg" | resize({ width: 2048, height: 1228 }) | webp %}" type="image/webp">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/services/concrete-overlay-brick-hall.jpg" | resize({ width: 2500, height: 1094 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/services/concrete-overlay-brick-hall.jpg" | resize({ width: 2500, height: 1094 }) | jpeg %}" alt="Concrete overlay being installed in a brick hall with arched windows" width="1920" height="840" loading="lazy" decoding="async">
                     </picture>
 
                     <div class="cs-slideshow-button cs-slideshow-next"></div>
@@ -458,12 +458,12 @@ tags: "sitemap"
                 <li class="cs-item">
                     <picture class="cs-picture">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gall1.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-glass-offices.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gall1.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-glass-offices.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gall1.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/gall1.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="commercial office concrete floor" width="305" height="284" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/polished-concrete-glass-offices.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/polished-concrete-glass-offices.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="Polished concrete floor in an office suite with glass walls" width="305" height="284" loading="lazy" decoding="async">
                     </picture>
                     <div class="cs-flex">
                         <span class="cs-date">Commercial</span>
@@ -477,12 +477,12 @@ tags: "sitemap"
                 <li class="cs-item">
                     <picture class="cs-picture">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gall2.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/epoxy-flake-garage-floor.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gall2.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/epoxy-flake-garage-floor.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gall2.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/gall2.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="polished concrete floor" width="305" height="284" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/epoxy-flake-garage-floor.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/epoxy-flake-garage-floor.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="Epoxy flake coating on a residential garage floor" width="305" height="284" loading="lazy" decoding="async">
                     </picture>
                     <div class="cs-flex">
                         <span class="cs-date">Residential</span>
@@ -498,12 +498,12 @@ tags: "sitemap"
                 <li class="cs-item">
                     <picture class="cs-picture">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gall3.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/sealed-warehouse-floor.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gall3.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/sealed-warehouse-floor.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gall3.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/gall3.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="dull concrete floor" width="305" height="284" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/sealed-warehouse-floor.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/sealed-warehouse-floor.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="Glossy sealed concrete floor in a warehouse" width="305" height="284" loading="lazy" decoding="async">
                     </picture>
                     <div class="cs-flex">
                         <span class="cs-date">Industrial</span>
@@ -519,12 +519,12 @@ tags: "sitemap"
                 <li class="cs-item">
                     <picture class="cs-picture">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gall4.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/stained-concrete-pool-patio.jpg" | resize({ width: 576, height: 600 }) | webp %}" type="image/webp">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gall4.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/stained-concrete-pool-patio.jpg" | resize({ width: 466, height: 472 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gall4.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/gall4.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="stamped concrete driveway" width="305" height="284" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/stained-concrete-pool-patio.jpg" | resize({ width: 610, height: 568 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/gallery/stained-concrete-pool-patio.jpg" | resize({ width: 610, height: 568 }) | jpeg %}" alt="Stained concrete patio around a backyard pool" width="305" height="284" loading="lazy" decoding="async">
                     </picture>
                     <div class="cs-flex">
                         <span class="cs-date">Residential</span>
