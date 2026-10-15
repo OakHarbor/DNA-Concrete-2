@@ -85,10 +85,9 @@
                 content: '';
                 width: 100%;
                 height: 100%;
-                background: var(--headerColor);
+                background: linear-gradient(180deg, rgba(30, 26, 23, 0.85) 0%, rgba(30, 26, 23, 0.7) 60%, rgba(30, 26, 23, 0) 100%);
                 /* prevents the cursor from interacting with it */
                 pointer-events: none;
-                opacity: 0.80;
                 display: block;
                 position: absolute;
                 bottom: 0;
@@ -101,7 +100,7 @@
                 height: 100%;
                 object-fit: cover;
                 /* makes the top of the image start at the top of the parent */
-                object-position: top;
+                object-position: center bottom;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -130,6 +129,10 @@
 
         .cs-background {
             height: 100%;
+
+            &:before {
+                background: linear-gradient(90deg, rgba(30, 26, 23, 0.85) 0%, rgba(30, 26, 23, 0.7) 40%, rgba(30, 26, 23, 0) 75%);
+            }
         }
     }
 }
@@ -139,7 +142,7 @@
     #hero-1949 {
         .cs-background {
             background: url("/assets/images/hero-stained-concrete-hall.jpg");
-            background-position: center;
+            background-position: center bottom;
             background-size: cover;
             background-repeat: no-repeat;
             /* creates the parallax effect */
@@ -169,15 +172,6 @@
             .cs-text,
             .cs-item-text {
                 opacity: 0.8;
-            }
-
-            .cs-background {
-                background-color: #000;
-                opacity: .17;
-
-                &:before {
-                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 26%, rgba(0, 0, 0, 0.00) 70.26%);
-                }
             }
         }
     }

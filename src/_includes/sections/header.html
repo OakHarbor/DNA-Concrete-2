@@ -4,12 +4,12 @@
             <div class="cs-top-contact">
                 <a href="tel:{{client.phoneForTel}}" class="cs-top-link">
                     <img class="cs-link-icon" src="/assets/svgs/call.svg" alt="" width="16" height="16" aria-hidden="true" decoding="async">
-                    Call us now {{client.phoneFormatted}}
+                    Call or text {{client.phoneFormatted}}
                 </a>
-                <a href="{{client.address.mapLink}}" class="cs-top-link">
+                <span class="cs-top-link">
                     <img class="cs-link-icon" src="/assets/svgs/clock.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
-                    Opening hours: Mon - Sat: 8:00am To 9:00pm
-                </a>
+                    We respond within one business day.
+                </span>
             </div>
            {# 
             <div class="cs-top-social">
@@ -99,14 +99,11 @@
                     </li>
 
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if "/agricultural-processing-facilities/" in page.url or "/food-and-beverage-facilities/" in page.url or "/industrial-and-manufacturing/" in page.url or "/commercial/" in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="industries-dropdown-toggle">
+                        <button class="cs-li-link cs-dropdown-toggle {% if "/food-and-beverage-facilities/" in page.url or "/industrial-and-manufacturing/" in page.url or "/commercial/" in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="industries-dropdown-toggle">
                             Industries
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
                         <ul class="cs-drop-ul" aria-labelledby="industries-dropdown-toggle">
-                            <li class="cs-drop-li">
-                                <a href="/agricultural-processing-facilities/" class="cs-li-link cs-drop-link">Agricultural Processing Facilities</a>
-                            </li>
                             <li class="cs-drop-li">
                                 <a href="/food-and-beverage-facilities/" class="cs-li-link cs-drop-link">Food & Beverage Processing</a>
                             </li>
@@ -119,154 +116,10 @@
                         </ul>
                     </li>
 
-                    <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if "/stockton/" in page.url or "/modesto/" in page.url or "/manteca/" in page.url or "/tracy/" in page.url or "/antioch/" in page.url or "/sacramento/" in page.url or "/elk-grove/" in page.url or "/lodi/" in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="locations-dropdown-toggle">
-                            Locations
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
-                        </button>
-                        <ul class="cs-drop-ul" aria-labelledby="locations-dropdown-toggle">
-                            <li class="cs-drop-li cs-drop3-main">
-                                <span class="cs-li-link cs-drop-link">
-                                    Stockton
-                                    <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </span>
-                                <!--Tertiary-->
-                                <ul class="cs-drop3">     
-                                    <li class="cs-drop-li3">
-                                        <a href="/stockton/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Coatings</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/stockton/stockton-concrete-polishing/" class="cs-li-link cs-drop-link cs-drop-link3">Polished Concrete</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/stockton/stockton-concrete-sealing/" class="cs-li-link cs-drop-link cs-drop-link3">Sealed Concrete</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/stockton/stockton-concrete-staining/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Staining</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/stockton/stockton-joint-expansion-repair/" class="cs-li-link cs-drop-link cs-drop-link3">Joint Expansion Repair</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/stockton/pool-deck-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Pool Deck Resurfacing</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/stockton/concrete-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Resurfacing</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="cs-drop-li cs-drop3-main">
-                                <span class="cs-li-link cs-drop-link">
-                                    Modesto
-                                    <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </span>
-                                <!--Tertiary-->
-                                <ul class="cs-drop3">
-                                    <li class="cs-drop-li3">
-                                        <a href="/modesto/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Coatings</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/modesto/pool-deck-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Pool Deck Resurfacing</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/modesto/concrete-floor-repair/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Floor Repair</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/modesto/concrete-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Resurfacing</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="cs-drop-li cs-drop3-main">
-                                <span class="cs-li-link cs-drop-link">
-                                    Tracy
-                                    <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </span>
-                                <!--Tertiary-->
-                                <ul class="cs-drop3">
-                                    <li class="cs-drop-li3">
-                                        <a href="/tracy/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Coatings</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/tracy/pool-deck-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Pool Deck Resurfacing</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/tracy/concrete-floor-repair/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Floor Repair</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="cs-drop-li cs-drop3-main">
-                                <span class="cs-li-link cs-drop-link">
-                                    Antioch
-                                    <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </span>
-                                <!--Tertiary-->
-                                <ul class="cs-drop3">
-                                    <li class="cs-drop-li3">
-                                        <a href="/antioch/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Coatings</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/antioch/concrete-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Resurfacing</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/manteca/" class="cs-li-link cs-drop-link">Manteca</a>
-                            </li>
-                            <li class="cs-drop-li cs-drop3-main">
-                                <span class="cs-li-link cs-drop-link">
-                                    Lodi
-                                    <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </span>
-                                <!--Tertiary-->
-                                <ul class="cs-drop3">
-                                    <li class="cs-drop-li3">
-                                        <a href="/lodi/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Coatings</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/lodi/concrete-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Resurfacing</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="cs-drop-li cs-drop3-main">
-                                <span class="cs-li-link cs-drop-link">
-                                    Elk Grove
-                                    <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </span>
-                                <!--Tertiary-->
-                                <ul class="cs-drop3">
-                                    <li class="cs-drop-li3">
-                                        <a href="/elk-grove/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Coatings</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/elk-grove/concrete-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Resurfacing</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="cs-drop-li cs-drop3-main">
-                                <span class="cs-li-link cs-drop-link">
-                                    Sacramento
-                                    <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </span>
-                                <!--Tertiary-->
-                                <ul class="cs-drop3">
-                                    <li class="cs-drop-li3">
-                                        <a href="/sacramento/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Coatings</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/sacramento/pool-deck-resurfacing-repair/" class="cs-li-link cs-drop-link cs-drop-link3">Pool Deck Resurfacing</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/sacramento/concrete-polishing/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Polishing</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/sacramento/concrete-staining/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Staining</a>
-                                    </li>
-                                    <li class="cs-drop-li3">    
-                                        <a href="/sacramento/concrete-resurfacing/" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Resurfacing</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="cs-li">
+                        <a href="/service-area/" class="cs-li-link {% if page.url == "/service-area/" %} cs-active {% endif %}" {% if page.url == "/service-area/" %} aria-current="page" {% endif %}>
+                            Service Area
+                        </a>
                     </li>
                     <li class="cs-li">
                         <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
@@ -276,7 +129,7 @@
                 </ul>
             </div>
         </nav>
-        <a href="/contact/" class="cs-button-solid cs-nav-button">Get A Free Quote</a>
+        <a href="/contact/" class="cs-button-solid cs-nav-button">Start A Quote</a>
         <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
             <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
             <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="" width="15" height="15">

@@ -1,21 +1,5 @@
 <footer id="cs-footer-1294">
     <div class="cs-container">       
-        <!-- Subscribe Form -->
-        <div id="cta-1294">
-            <div class="cs-content">
-                <h2 class="cs-title">We Might Be Closer Than You Think</h2>
-                <a href="/stockton/" class="cs-button-solid">Check Our Locations</a>
-            </div>
-            <picture class="cs-background">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cta-stained-concrete-hall.jpg" | resize({ width: 576, height: 634 }) | webp %}" type="image/webp">
-                <!--Tablet Image-->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cta-stained-concrete-hall.jpg" | resize({ width: 1984, height: 530 }) | webp %}" type="image/webp">
-                <!--Desktop Image-->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cta-stained-concrete-hall.jpg" | resize({ width: 2500, height: 523 }) | webp %}" type="image/webp">
-                <img src="{% getUrl "/assets/images/cta-stained-concrete-hall.jpg" | resize({ width: 2500, height: 523 }) | jpeg %}" alt="" aria-hidden="true" width="1280" height="268" loading="lazy" decoding="async">
-            </picture>
-        </div>                
         <div class="cs-wrapper">
             <!-- Logo Group -->
             <div class="cs-logo-group">
@@ -23,23 +7,17 @@
                     <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo" width="240" height="32">
                 </a>
                 <p class="cs-text">
-                    DNA Restoring Concrete Inc, founded in 2019, brings expert concrete floor restoration to California's Central Valley—family-owned and ASCC-certified.
+                    DNA Restoring Concrete Inc, founded in 2019, brings expert concrete floor restoration to California's Central Valley. Family-owned and an ASCC member. CA License #1048419.
                 </p>
                 <a href="tel:{{client.phoneForTel}}" class="cs-link">
                     <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/call.svg" alt="icon" width="24" height="24">
-                    Call us: {{client.phoneFormatted}}
+                    Call or text {{client.phoneFormatted}}
                 </a>
-                <a href="{{client.address.mapLink}}" class="cs-link">
+                <span class="cs-link">
                     <img class="cs-link-icon cs-clock" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/clock.svg" alt="icon" width="24" height="24">
-                    Opening hours: Mon - Sat: 8:00am To 9:00pm
-                </a>
-                <a href="{{client.address.mapLink}}" class="cs-link">
-                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/pin.svg" alt="icon" width="24" height="24">
-                        {{ client.address.lineOne }},
-                        {{ client.address.lineTwo }}, 
-                        {{ client.address.city }}, {{ client.address.state }}
-                        {{ client.address.zip }}
-                </a>
+                    We respond within one business day.
+                </span>
+                <span class="cs-link">Based in Lodi, serving the Central Valley and Sacramento area.</span>
 
                 {#
                 <div class="cs-social">
@@ -59,9 +37,6 @@
             <ul class="cs-nav">
                 <li class="cs-nav-li">
                     <span class="cs-header">industries</span>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="/agricultural-processing-facilities/">Agricultural Processing Facilities</a>
                 </li>
                 <li class="cs-nav-li">
                     <a class="cs-nav-link" href="/food-and-beverage-facilities/">Food & Beverage Processing</a>
@@ -102,6 +77,9 @@
                 </li>
                   <li class="cs-nav-li">
                     <a class="cs-nav-link" href="/tracy/">Tracy</a>
+                </li>
+                  <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/antioch/">antioch</a>
                 </li>
                   <li class="cs-nav-li">
                     <a class="cs-nav-link" href="/manteca/">manteca</a>

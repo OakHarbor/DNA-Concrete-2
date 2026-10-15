@@ -1,0 +1,104 @@
+---
+title: "Service Area | DNA Restoring Concrete"
+description: "DNA Restoring Concrete is based in Lodi, serving the Central Valley and Sacramento area, including Stockton, Modesto, Tracy, Antioch, Manteca and Elk Grove."
+permalink: '/service-area/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" />
+{% endblock %}
+
+{% block body %}
+    <div id="banner-1106">
+        <div class="cs-container">
+            <span class="cs-int-title">Service Area</span>
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/service-area/" class="cs-link cs-active">Service Area</a>
+                </div>
+            </div>
+
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 896 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 948 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 617 }) | jpeg %}" alt="" width="1920" height="474" fetchpriority="high" decoding="async">
+            </picture>
+        </div>
+    </div>
+
+    <section id="services-1202">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex-group">
+                    <span class="cs-topper">Service Area</span>
+                    <h1 class="cs-title">Based in Lodi, serving the Central Valley and Sacramento area</h1>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Stockton</h2>
+                        <p class="cs-item-text">Concrete coatings, polishing, sealing, staining, joint expansion repair, pool deck resurfacing, and concrete resurfacing.</p>
+                        <a class="cs-button-solid" href="/stockton/" aria-label="Concrete services in Stockton">Learn More</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Modesto</h2>
+                        <p class="cs-item-text">Concrete coatings, pool deck resurfacing, concrete floor repair, and concrete resurfacing.</p>
+                        <a class="cs-button-solid" href="/modesto/" aria-label="Concrete services in Modesto">Learn More</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Tracy</h2>
+                        <p class="cs-item-text">Concrete coatings, pool deck resurfacing, and concrete floor repair.</p>
+                        <a class="cs-button-solid" href="/tracy/" aria-label="Concrete services in Tracy">Learn More</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Antioch</h2>
+                        <p class="cs-item-text">Concrete coatings and concrete resurfacing.</p>
+                        <a class="cs-button-solid" href="/antioch/" aria-label="Concrete services in Antioch">Learn More</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Manteca</h2>
+                        <p class="cs-item-text">Concrete coatings for homes and businesses.</p>
+                        <a class="cs-button-solid" href="/manteca/" aria-label="Concrete services in Manteca">Learn More</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Lodi</h2>
+                        <p class="cs-item-text">Concrete coatings and concrete resurfacing.</p>
+                        <a class="cs-button-solid" href="/lodi/" aria-label="Concrete services in Lodi">Learn More</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Elk Grove</h2>
+                        <p class="cs-item-text">Concrete coatings and concrete resurfacing.</p>
+                        <a class="cs-button-solid" href="/elk-grove/" aria-label="Concrete services in Elk Grove">Learn More</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Sacramento</h2>
+                        <p class="cs-item-text">Concrete coatings, pool deck resurfacing, concrete polishing, staining, and concrete resurfacing.</p>
+                        <a class="cs-button-solid" href="/sacramento/" aria-label="Concrete services in Sacramento">Learn More</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

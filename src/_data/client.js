@@ -4,11 +4,8 @@ module.exports = {
     phoneForTel: "209-200-8242",
     phoneFormatted: "(209) 200-8242",
     address: {
-        lineOne: "601",
-        lineTwo: "W Vine St",
-        city: "Stockton",
+        city: "Lodi",
         state: "CA",
-        zip: "95203",
         mapLink: "https://maps.app.goo.gl/mJFShJyz8AMpBTKz5"
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included

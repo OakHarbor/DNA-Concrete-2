@@ -530,7 +530,7 @@
 			gap: (8/16rem);
 			position: relative;
 
-			&:nth-of-type(2) {
+			&:nth-child(2) {
 				display: none;
 			}
 		}
@@ -688,7 +688,7 @@
 @media only screen and (min-width: 768px) {
 	#cs-navigation {
 		.cs-top-link {
-			&:nth-of-type(2) {
+			&:nth-child(2) {
 				display: flex;
 			}
 		}
@@ -1639,7 +1639,6 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 	#cta-1692 {
-		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem clamp(11.75rem, 19vw, 13.75rem) 1rem;
 		padding: var(--sectionPadding);
 		position: relative;
 		z-index: 1;
@@ -1908,7 +1907,6 @@
 @media only screen and (min-width: 0rem) {
 	#cs-footer-1294 {
 		padding: var(--sectionPadding);
-		padding-top: 0;
 		padding-bottom: (20/16rem);
 		background-color: var(--headerColor);
 		position: relative;
