@@ -43,7 +43,7 @@ permalink: "/contact/"
                 <h1 class="cs-title">Contact DNA</h1>
             </div>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+            <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field" data-sheet="{{ client.leadSheetEndpoint }}">
                 <p style="display:none;">
                     <label>Don’t fill this out if you're human: 
                     <input name="bot-field" />
@@ -80,6 +80,15 @@ permalink: "/contact/"
                 </label>
 
                 <label class="cs-label">
+                    Is this for your home or a business? *
+                    <select class="cs-input cs-select" required id="type-1750" name="home-or-business">
+                        <option value="" disabled selected>Select one</option>
+                        <option value="Home">Home</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </label>
+
+                <label class="cs-label">
                     Message *
                     <textarea class="cs-input cs-textarea" required name="Message" id="message-1750" placeholder="Hello, I am interested..."></textarea>
                 </label>
@@ -103,6 +112,8 @@ permalink: "/contact/"
 
 
     {% include 'sections/cta.html' %}
+
+    <script defer src="/assets/js/contact.js"></script>
 
 
 {% endblock %}
