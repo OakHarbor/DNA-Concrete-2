@@ -10,7 +10,6 @@ module.exports = {
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://dnarestoringconcrete.com",
-    leadSheetEndpoint: "",
     // Passing the isProduction variable for use in HTML templates
     isProduction: process.env.ELEVENTY_ENV === "PROD",
 };

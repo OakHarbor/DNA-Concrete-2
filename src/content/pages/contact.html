@@ -43,7 +43,7 @@ permalink: "/contact/"
                 <h1 class="cs-title">Contact DNA</h1>
             </div>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field" data-sheet="{{ client.leadSheetEndpoint }}">
+            <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
                 <p style="display:none;">
                     <label>Don’t fill this out if you're human: 
                     <input name="bot-field" />
@@ -112,8 +112,6 @@ permalink: "/contact/"
 
 
     {% include 'sections/cta.html' %}
-
-    <script defer src="/assets/js/contact.js"></script>
 
 
 {% endblock %}
