@@ -1,6 +1,6 @@
 ---
 title: "Blog | DNA Restoring Concrete"
-description: "Concrete care tips, project updates, and expert advice from DNA Restoring Concrete. Polished concrete, epoxy, sealing and more in Stockton and the Central Valley."
+description: "Concrete care tips, project updates and advice from DNA Restoring Concrete. Polished concrete, epoxy, sealing and more in Stockton and the Central Valley."
 permalink: "/blog/"
 ---
 
@@ -14,7 +14,7 @@ permalink: "/blog/"
 {% block body %}
      <div id="banner-1106">
         <div class="cs-container">
-            <span class="cs-int-title">Blog</span>
+            <h1 class="cs-int-title">Blog</h1>
                 <div class="cs-breadcrumbs">
                     <a href="/" class="cs-link">Home</a>
                     <a href="/blog/" class="cs-link cs-active">Blog</a>
@@ -40,9 +40,9 @@ permalink: "/blog/"
     <div id="blog-listing">
         <div class="cs-container">
             {% if collections.post | length == 0 %}
-                <h1 class="cs-title">
+                <h2 class="cs-title">
                     No Recent Posts
-                </h1>
+                </h2>
             {% else %}
                 {%- for post in collections.post | reverse -%}
                     <article class="cs-article">
