@@ -1041,8 +1041,8 @@
 @media only screen and (min-width: 48rem) {
     #reviews-2327 {
         .cs-container {
-            width: 53vw;
-            max-width: (846/16rem);
+            width: 100%;
+            max-width: (1280/16rem);
 
             &:nth-child(2) {
                 margin-top: 0rem;
@@ -1054,15 +1054,16 @@
         }
 
         .cs-wrapper {
-            max-width: (739/16rem);
+            flex: 1;
         }
 
         .cs-reviews-wrapper {
             flex-direction: row;
+            gap: (24/16rem);
         }
 
         .cs-hidden {
-            width: 80%;
+            width: calc(100% - (72/16rem));
         }
 
         .cs-flex {
@@ -1075,10 +1076,6 @@
             z-index: 10;
         }
 
-        .cs-h3,
-        .cs-review {
-            max-width: (739/16rem);
-        }
 
         .cs-review {
             /* adjust as needed based on the tallets review, changes on desktop */
