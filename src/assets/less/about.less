@@ -496,6 +496,7 @@
 @media only screen and (min-width: 0rem) {
     #reviews-2327 {
         padding: var(--sectionPadding);
+        background-color: #f7f7f7;
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -578,7 +579,7 @@
             width: (48/16rem);
             height: (48/16rem);
             padding: (14/16rem);
-            background-color: #f7f7f7;
+            background-color: #fff;
             border: none;
             transition: background-color .3s;
 
@@ -619,6 +620,10 @@
         }
 
         .cs-wrapper {
+            box-sizing: border-box;
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            background-color: #fff;
+            border: 1px solid #BEB9B5;
             position: relative;
             z-index: 1;
             transition: opacity 0.3s;
@@ -789,6 +794,13 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-2327 {
+            background-color: rgba(0, 0, 0, 0.2);
+
+            .cs-wrapper {
+                background-color: transparent;
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+
             .cs-title,
             .cs-review,
             .cs-h3,
